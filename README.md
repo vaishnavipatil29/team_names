@@ -1,1 +1,1 @@
-<!--submission guidelines-->
+## Team Names
