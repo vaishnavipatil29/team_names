@@ -1,0 +1,19 @@
+<?php
+session_start();
+    $email = $_POST['email'];
+	$password = $_POST['password'];
+    $mysqli = new mysqli("localhost", "root", "", "Battleship");
+    $mysqli->query("USE A_New_Tinder");
+    $result = $mysqli->query("SELECT email, password FROM Finders");
+        if($result->num_rows > 0)
+            {
+                $row = $result->fetch_assoc();
+                    if($row['email'] == $email && $row['password'] == $password)
+                    {	
+			    $_SESSION["email"] = $_POST['email'];
+			    header('Location: homepage.html');
+		}				
+                    else
+                        header('Location: finder_login.html');
+            }
+?>

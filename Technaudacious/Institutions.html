@@ -1,0 +1,461 @@
+<html>
+<head>
+	<title>A New Tinder!</title>
+	<style>
+		body {
+			margin: 0px;
+			/*margin-right: 5px;*/
+		}
+		.header {
+			/*position: fixed;*/
+			height: 10%;
+			width: 100%;
+			top: 0px;	
+			z-index: 3;		
+		}
+		.header #background, .header #labels {
+			position: absolute;
+			/*background-color: white;*/
+			/*padding: 0 0 5%;*/
+			width: 100%;
+			height: 100%;
+			background-size: 100%;
+			/*margin-right: auto;*/
+			/*margin-left: auto;*/
+		}
+
+		.header #labels {
+			position: fixed;
+			background-color: transparent;
+			color: #006793;
+		}
+
+		.header #background {
+			position: fixed;
+			background-color: darkblue;
+			height: 10%;
+			width: 100%;
+			opacity: 0.6;
+		}
+
+		.header #search {
+			position: fixed;
+			width: 30%;
+			height: 7%;
+			left: 35%;
+			top: 1.5%;
+			background-color: #f29b9b;
+			opacity: 0.5;
+		}
+
+		.header #logo {
+			position: fixed;
+			/*margin-top: 1.5%*/
+			/*margin-left: 5%;*/
+			left: 1.5%;
+			top: 1.5%;
+			width: 12%;
+			height: 7%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.header #login {
+			position: fixed;
+			right: 1.5%;
+			top: 2%;
+			width: 5%;
+			height: 7%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.dropbtn {
+			position: fixed;
+			right: 1.5%;
+			top: 1.5%;
+			width: 7%;
+			height: 7%;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+			font-size: 120%;
+			font-family: "Herculanum";
+		}
+
+		.dropdown {
+			/*right: 0;*/
+			background-color: : #006793;
+		    position: relative;
+		    display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: fixed;
+			right: 1.5%;
+			top: 8.5%;
+			margin-right: auto;
+			background-color: green;
+			border: 1px;
+			border-color: black
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			/*right: 10%;*/
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+			font-family: "Herculanum";
+		}
+
+		.dropdown-content a:hover {background-color: #fff;}
+
+		.dropdown:hover .dropdown-content {display: block;}
+
+		.dropdown:hover .dropbtn {background-color: #006793;}
+
+		.content{
+		    width:100%;
+	    	height:5000px;
+	    	background-color:#005b8e;
+		}
+
+		input::-webkit-input-placeholder {
+		    font-size: 20px;
+		    line-height: 3;
+		    font-family: Herculanum;
+		}
+
+		input.empty {
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: inherit;
+		}
+
+		table.full {
+			position: absolute;
+			top: 12%; 
+			left: 10%;
+			/*bottom: 10%;*/
+			height: 10%;
+			width: 80%;
+			/*height: 80%;*/
+			table-layout: auto;
+			background-color: #752f16;
+			border-collapse: collapse;
+			font-family: Herculanum;
+			overflow-y: scroll;
+			overflow: scroll;
+		}
+		td, th {
+			border: 1px solid white;
+		}
+
+
+	</style>
+	<!-- <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script> -->
+	<script type="text/javascript">
+		function an_alert() {
+			alert("Hi")
+		}
+	</script>
+</head>
+<body bgcolor = "#006793">
+
+	<table class = "full">
+		<tr>
+			<th>
+				S. No.
+			</th>
+			<th>
+				Institution Name
+			</th>
+			<th>
+				Contact Details
+			</th>
+			<th>
+				Field
+			</th>
+			<th>
+				Name of Institution Head/Guru
+			</th>
+		</tr>
+		<tr>
+			<td>
+				1
+			</td>
+			<td>
+				Guru Ms. Jayalakshmi Eshwar, Abhinaya Centre for Dance Upper G.F., Y-33, Hauz Khas, New Delhi-110016.
+			</td>
+			<td>
+				Tel.:9811490124 Email:va.eshwar@gmail.com
+			</td>
+			<td>
+				Bharatanatyam
+			</td>
+			<td>
+				Guru Ms. Jayalakshmi Eshwar
+			</td>
+		</tr>
+		<tr>
+			<td>
+				2
+			</td>
+			<td>
+				Akhila Bharatiya Gandharva Mahavidyalaya Mandal, Gandharva Niketan, Brahmanpuri, Miraj-416410, Distt.-Sangli, Maharashtra.
+			</td>
+			<td>
+				Tel.: 233-2222526, Mob. 9423858802 Email: mrj_abgm@bsnl.in
+			</td>
+			<td>
+				Hindustani Classical Music
+			</td>
+			<td>
+				Shri Sudhir Pote, Executive Secretary
+			</td>
+		</tr>
+		<tr>
+			<td>
+				3
+			</td>
+			<td>
+				Guru Shri V. P. Dhananjayan Bharatha Kalanjali 6, Jeeratnam Nagar, 1st Street Adyar, Chennai-600020.
+			</td>
+			<td>
+				Tel.:044-24911125, 24461024 Email: Bkalanjali@gmail.com 
+			</td>
+			<td>
+				Bharatanatyam
+			</td>
+			<td>
+				Guru Shri. V. P. Dhananjayan
+			</td>
+		</tr>
+		<tr>
+			<td>
+				4
+			</td>
+			<td>
+				Gandharva Mahavidyalaya, 212, Deen Dayal Upadhyaya Marg, New Delhi-110002.
+			</td>
+			<td>
+				Tel.: 23233791, 23238784 Fax: 23222840 Email: gandharvamahavidyalaya@rediffmail.com, gmvnewdelhi@gmail.com
+			</td>
+			<td>
+				Harmonium, Sitar, Violin, Flute, Tabla, Odissi, Kathak & Bharatanatyam
+			</td>
+			<td>
+				Shri Madup Mudgal, Principal Guru Ms. Madhavi Mudgal
+			</td>
+		</tr>
+		<tr>
+			<td>
+				5
+			</td>
+			<td>
+				Guru Dr. Saroja Vaidyanathan Ganesa Natyalaya, C-16, Qutab Institutional Area (Behind Qutab Hotel) New Delhi-110016.
+			</td>
+			<td>
+				Tel.: 26862995, 26567397, 98105546646 Fax: 41688886 www.sarojavaidyanathan.com Email:saroja_vaidyanathan@hotmail.com, ganesa.natyalaya@gmail.com
+			</td>
+			<td>
+				Bharatanatyam
+			</td>
+			<td>
+				Guru Dr. Saroja Vaidyanathan
+			</td>
+		</tr>
+		<tr>
+			<td>
+				6
+			</td>
+			<td>
+				Guru Ms. Rajam Rajagopal, Guruvayur Rajam Rajagopal, Flat No.C-3, TNHB, Visalakshi Nagar, Chennai-600004.
+			</td>
+			<td>
+				Tel.: 044-24936210
+			</td>
+			<td>
+				Carnatic Music
+			</td>
+			<td>
+				Guru Ms. Rajam Rajagopal
+			</td>
+		</tr>
+		<tr>
+			<td>
+				7
+			</td>
+			<td>
+				Kalakshetra Foundation Thiruvanmiyur, Chennai-600041.
+			</td>
+			<td>
+				Tel.:04424520836/4057/1844 Fax:044-24524359 Email: info@kalakshetra.in Website: www.kalakshetra.in
+			</td>
+			<td>
+				Vocal, Veena, Violin, Flute, Mridangam & Bharatanatyam
+			</td>
+			<td>
+				Registrar
+			</td>
+		</tr>
+		<tr>
+			<td>
+				8
+			</td>
+			<td>
+				Kathak Kendra, Harijan Sewak Sangh (Gandhi Ashram), Kingsway Camp, Delhi-110009. 
+			</td>
+			<td>
+				Tel.:23385065, 23388681 delhi_kathak@yahoo.com
+			</td>
+			<td>
+				Kathak Dance
+			</td>
+			<td>
+				Director
+			</td>
+		</tr>
+		<tr>
+			<td>
+				9
+			</td>
+			<td>
+				Kerala Kalamandalam Deemed University for Art & Culture, Vallathol Nagar, Cheruthuruthi, Thrissur Distt., Kerala, Pin-679531.
+			</td>
+			<td>
+				Tel.: 4884 262418, 262562, 263440 Fax: 4884262019  Email:info@kalamandalam.org www.kalamandalam.org			
+			</td>
+			<td>
+				Bharatanatyam, Mohiniattam and Kathakali
+			</td>
+			<td>
+				Registratr
+			</td>
+		</tr>
+		<tr>
+			<td>
+				10
+			</td>
+			<td>
+				International Centre for Kathakali, C-20, Institutional Area, Behind Qutab Hotel, New Delhi-110016.
+			</td>
+			<td>
+				Tel.: 26867263 Fax: 26533044 Email:info@internationalkathakalicentre.org www.kathakalicentre.com
+			</td>
+			<td>
+				Kathakali
+			</td>
+			<td>
+				Shri Evoor Rajedran Pillai Acting Principal
+			</td>
+		</tr>
+		<tr>
+			<td>
+				11
+			</td>
+			<td>
+				Shriram Bharatiya Kala Kendra (SBKK), 1, Copernicus Marg, New Delhi-110001.
+			</td>
+			<td>
+				Tel.: 43503333, 23386428/29 Fax: 23383568 www.thekendra.com Email: sbkk@thekendra.com
+			</td>
+			<td>
+				Kathak, Bharatanatyam, Odissi, Chhau, Hindustani Classical Vocal, Dhrupad, Sitar, Saroad & Tabla.
+			</td>
+			<td>
+				Principal
+			</td>
+		</tr>
+		<tr>
+			<td>
+				12
+			</td>
+			<td>
+				Nalanda Nritya Kala Mahavidyalaya, Plot No.A-7/1, NS Road No.10, JVPD Scheme, Vile Parle (W), Mumbai, Maharashtra-400049.
+			</td>
+			<td>
+				Tel.: 022-6206328, Fax: 022-6245008 Mob.9821025843 Email:ndrc@mtnl.net.in Web: http://www.nalandadanceeducation.com
+			</td>
+			<td>
+				Bharatanatyam / Kathakali / Mohiniattam
+			</td>
+			<td>
+				Dr. (Smt.) Kanak Rele Director
+			</td>
+		</tr>
+		<tr>
+			<td>
+				13
+			</td>
+			<td>
+				Guru Smt. Lalitha Srinivasan, Nupur School of Bharatnatyam, No.4, 12th Cross, 8th Main, Malleswaram, Bangaluru-560003.
+			</td>
+			<td>
+				Tel.: 080-23345504, 080-23347446 Mob.09880879706 Email:lalithanupura@yahoo.com Web: www.nupurabharatnatyam@google.com
+			</td>
+			<td>
+				Bharatanatyam
+			</td>
+			<td>
+				Guru Smt. Lalitha Srinivasan
+			</td>
+		</tr>
+		<tr>
+			<td>
+				14
+			</td>
+			<td>
+				Padatik Dance Centre, 6/7 Acharya Jagdish Chandra Bose Road, Kolkata –700017.
+			</td>
+			<td>
+				Tel.: 033-2287-6087, Mob.9831203082 Tel-Fax: 033-2281-3189 Email:padatik@gmail.com
+			</td>
+			<td>
+				Kathak Dance
+			</td>
+			<td>
+				Dr. Joyshree Mitra, Secretary,
+			</td>
+		</tr>
+		<tr>
+			<td>
+				15
+			</td>
+			<td>
+				Guru Padma Bhushan, Ms. Kumudini Lakhia, Kadamb, Centre for Dance and Music, Parimal Garden, C.G. Road, Ahmedabad-380006, Gujarat.
+			</td>
+			<td>
+				Tel.: 079-26442886 (o), 079-26423521 Mob.9879000362 (Mr. Parulben) Fax: 079-27550566/6669 Email: kadamb@vsnl.net Web:www.kadamb.org
+			</td>
+			<td>
+				Kathak Dance
+			</td>
+			<td>
+				Guru Padma Bhushan Ms. Kumudini Lakhia
+			</td>
+		</tr>
+	</table>
+
+	<div class = "header">
+		<div id = "background"></div>
+			<a href = "index.html"><image src = "Aircraft_Carrier_Design.jpg" id = "logo"></image></a>
+			<form method = "post" action = ""><input id = "search" type = "text" placeholder = "&#xF002; Enter What you wish to search. "></form>
+	</div>
+	<div class = "dropdown">
+		<button class = "dropbtn">Login</button>
+		<div class = "dropdown-content">
+			<a href = "artist_login.html">I'm an artist!</a>
+			<a href = "finder_login.html">I'm looking for an artist!</a>
+		</div>
+	</div>
+	<!-- <div class = "content"> -->
+	<!-- </div> -->
+</body>
+</html>
