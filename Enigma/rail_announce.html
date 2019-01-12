@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Indian Railways</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 20px;}
+  .margin {margin-top: 5px;}
+  .bg-1 { 
+      background-color: #0D2E7E/*#1abc9c*/; /* Green */
+      color: #ffffff;
+      margin: auto;
+      text-align: center;
+  }
+  .bg-2 { 
+      background-color: #f0e36c/*#caf17f#474e5d*/; /* Dark Blue */
+      color: #555555/*#ffffff*/;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+      word-spacing: 0px;
+  }
+  .container-fluid {
+      padding-top: 20px;
+      padding-bottom: 8px;
+  }
+  .navbar {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1.5px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0D2E7E;
+  color: white;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <form enctype="multipart/form-data" action="exec.php" method="POST">
+               <input type="submit" class="btn" value="Announcements" name="back" style="float: center; width: 20%; margin-left: 2%;margin-top: 1%;background-color: #16DCC4;color: #000000" >
+                </form>
+  <form enctype="multipart/form-data" action="https://www.irctc.co.in" method="POST">
+               <input type="submit" class="btn" value="IRCTC" name="back" style="float: left; width: 20%; margin-left: 2%;margin-top: 1%;background-color: #16DCC4;color: #000000" >
+                 </form>
+  <form enctype="multipart/form-data" action="https://www.indianrail.gov.in/enquiry/PNR/PnrEnquiry.html" method="POST">
+               <input type="submit" class="btn" value="PNR Enquiry" name="back" style="float: right; width: 20%; margin-left: 2%;margin-top: 1%;background-color: #16DCC4;color: #000000" >
+                 </form>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <p><span class="glyphicon glyphicon-copyright-mark">DevHack 2019 Team Enigma</a></p> 
+</footer>
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script><br>
+</body>
+</html>
+
