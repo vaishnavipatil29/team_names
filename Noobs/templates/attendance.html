@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}Attendance{% endblock %}
+{% block css %}
+    <link href="{% static 'css/attendance.css' %}" rel="stylesheet">
+    <link href="{% static 'css/dhtmlxcalendar.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <i class="fa fa-search fa-2x"></i>
+    <input type="text" id="search" onkeyup="sort()" placeholder="Search names ..">
+    From:<input type="text" id="calendar" placeholder="Filter by dates ..">
+    To:<input type="text" id="calendar2" placeholder="Filter by dates ..">
+    <table class="table table-bordered table-hover table-striped" id="table">
+        <thead>
+        <tr>
+            <th># Id</th>
+            <th>User</th>
+            <th>Date</th>
+            <th>In / Out</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in data %}
+        <tr>
+            {% for col in row %}
+            <td>{% if col is '' %}Absent
+                {% else %} {{col}} {% endif %}<td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}
+{% block javascript %}
+    <script src="{% static 'js/attendance.js' %}"></script>
+    <script src="{% static 'js/dhtmlxcalendar.js' %}"></script>
+{% endblock %}
