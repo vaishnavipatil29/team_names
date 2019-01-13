@@ -1,0 +1,27 @@
+html,body {
+    margin: 0;
+    height: 100%;	
+    }
+.form_signup{
+background-color: rgb(0,0,0); /* Fallback color */
+	font-family: "Roboto";
+	padding: 0px;
+	border: 2px solid;
+	background: transparent;
+	-webkit-box-shadow: 0px 1px 24px 5px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 1px 24px 5px rgba(0,0,0,0.7);
+box-shadow: 0px 1px 24px 5px rgba(0,0,0,0.7);
+}
+.login_form
+{	
+	padding: 12px 20px;
+}
+.email,.uname,.mname,.rnum{
+	color: #fff;
+}
+.pass{
+	color: #fff;
+}
+.rem{
+	color: #fff;
+}

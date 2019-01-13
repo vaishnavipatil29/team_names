@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto+Slab|Acme|Amatic+SC|Anton|Bree+Serif|Courgette|Lobster|Lobster+Two|Merriweather|Oswald|Pacifico|Righteous|Roboto');
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+	color: #222;
+	margin: 0px;
+	padding: 0px;
+}
+.site_header {
+	background-color: #330033;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	height: 100px;
+}
+.club_logo {
+	font-family: 'Lobster Two', cursive;
+}
+.navbar {
+	padding: 0.8rem;
+	border-radius: 0px; 
+}
+.navbar-nav li {
+	padding-right: 180px;
+}
+.nav-link {
+	font-size: 1.1em !important;
+}
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1 {
+	font-size: 500%;
+	font-family: 'Abril Fatface', cursive;
+}
+
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0px;
+}
+.padding {
+	padding-bottom: 2rem; 
+}
+.welcome {
+	width: 75%;
+	margin: 0 auto;
+}
+.welcome hr {
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+}
+footer {
+	background-color: #330033;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+}
+.footer_lines {
+	color: #fff;
+}
+.fa-facebook {
+	color: #3b5998;
+}
+.fa-twitter {
+	color: #00aced;
+}
+.fa-instagram {
+	color: #bc2a8d;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+.social a {
+	font-size: 3.5em;
+	padding: 3rem;
+}
+.music {
+	font-size: 5em;
+}
+footer a {
+	color: #fff;
+}
+.logo {
+	width: 150px;
+	height: 130px;
+}
+.logo2 {
+	position: absolute;
+	top: 0%;
+	width: 120px;
+	height: 100px;
+}
+/*
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Anton', sans-serif;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Pacifico', cursive;
+
+    font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Bree Serif', serif;
+
+    font-family: 'Amatic SC', cursive;
+
+    font-family: 'Righteous', cursive;
+
+    font-family: 'Courgette', cursive;
+
+    font-family: 'Lobster Two', cursive;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Oswald', sans-serif;
+*/
+/* Media Queries */
+@media (max-width: 992px) {
+	.navbar-nav li {
+		padding-right: 80px;
+	}
+	.social a {
+		font-size: 2em;
+		padding: 2rem;
+	}
+	.logo {
+		width: 200px;
+		height: 180px;
+	}
+	.logo2 {
+		width: 130px;
+		height: 110px;
+		top: 0%;
+	}
+	.display-5 {
+		font-size: 150%;
+	}
+}
+@media (max-width: 768px) {
+	.carousel-caption {
+		top: 45%;
+	}
+	.carousel-caption h1 {
+		font-size: 350%;
+		font-family: 'Abril Fatface', cursive;
+	}
+	.carousel-caption h3 {
+		font-size: 140%;
+	}
+	.site_header {
+		background-color: #330033;
+		color: #fff;
+		font-family: 'Roboto Slab', serif;
+		height: 130px;
+	}
+	.navbar-nav li {
+		padding-right: 50px;
+	}
+	.display-4 {
+		font-size: 200%;
+	}
+	.display-5 {
+		font-size: 130%;
+	}
+	.social {
+		margin: 0px;
+		font-size: 2em;
+		padding: 1rem;
+	}
+	.logo2 {
+		width: 120px;
+		height: 100px;
+		top: 8%;
+	}
+}
+@media (max-width: 576px) {
+	.carousel-caption {
+		top: 40%;
+	}
+	.carousel-caption h1 {
+		font-size: 250%;
+		font-family: 'Abril Fatface', cursive;
+	}
+	.navbar {
+		padding: 0.5rem;
+	}
+	.carousel-caption h3 {
+		font-size: 110%;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.site_header {
+		background-color: #330033;
+		color: #fff;
+		font-family: 'Roboto Slab', serif;
+		height: 80px;
+	}
+	.navbar-nav li {
+		padding-right: 0px;
+	}
+	.display-4 {
+		font-size: 160%;
+	}
+	.display-5 {
+		display: none;
+	}
+	.social a {
+		margin: 0px;
+		font-size: 1em;
+		padding: 0rem;
+	}
+	.logo2 {
+		width: 80px;
+		height: 60px;
+		top: 8%;
+	}
+}
+
+
+
+
+/* Firefox Bug Fix */
+
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+
+/* Background Image */
+figure {
+	position: relative;
+	width: 60%;
+	height: 60%;
+	margin: 0!important;
+}
+/*.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+}*/
+
+/* Bootstrap padding Fix */
+[class*="col-"] {
+	padding: 1rem;
+}
