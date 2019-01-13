@@ -1,0 +1,42 @@
+const int ledPin =3;
+
+const int ldrPin = A0;
+int B=1020;
+int b=0;
+void setup() {
+
+Serial.begin(9600);
+
+pinMode(ledPin, OUTPUT);
+
+pinMode(ldrPin, INPUT);
+
+}
+
+void loop() {
+int ldrStatus = analogRead(ldrPin);
+
+if (ldrStatus <=400) {
+
+analogWrite(ledPin,200);
+
+Serial.println(ldrStatus);
+
+}
+
+if(ldrStatus >=400 && ldrStatus <=750)
+{
+    b=(750-ldrStatus)/5 ;
+analogWrite(ledPin,b);
+Serial.println(ldrStatus);
+delay(100);
+}
+if (ldrStatus >=750) {
+delay(1000);
+analogWrite(ledPin,0);
+
+Serial.println(ldrStatus);
+
+}
+
+}
