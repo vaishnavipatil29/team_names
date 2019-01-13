@@ -1,1 +1,2 @@
 <!--type your content here-->
+To use our app the user should first create an account and that account will be added to the database which will help in searching the person in need.The user who are having an account will be added to the database .The student can find the Professor by searching him/her on the search bar and get their approximate location.Our extended app will have a chatbot which will help the student to chat before they meet .It will also be containg a ToDo list where the student can note down his doubts or queries before he go to the professor.

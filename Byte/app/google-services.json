@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "272786497480",
+    "firebase_url": "https://findvip-e8d76.firebaseio.com",
+    "project_id": "findvip-e8d76",
+    "storage_bucket": "findvip-e8d76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272786497480:android:fded1942b631b6e7",
+        "android_client_info": {
+          "package_name": "com.example.saisandeep.findviptest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272786497480-l7crqlvdmlu16odtpuf7h60bgdq8r505.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saisandeep.findviptest",
+            "certificate_hash": "6454e39d5d9b6d53684271f32dec4918dc1162a5"
+          }
+        },
+        {
+          "client_id": "272786497480-uaff3c1b2jbknfgru1816v9u7c78veq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUL9XrZH6Jc_f4KHI99O2wSSxNPeVqDkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272786497480-uaff3c1b2jbknfgru1816v9u7c78veq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
